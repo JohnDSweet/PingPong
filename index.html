@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+    <script src="js/jquery-3.3.1.js"></script>
+    <script src="js/scripts.js"></script>
+    <title>Ping Pong</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Let's Play!</h1>
+      <h3>RUles:</h3>
+      <ul>
+        <li>Numbers Divisible by 3 become "ping"</li>
+        <li>Numbers Divisible by 5 become "pong"</li>
+        <li>Numbers Divisible by 15 become "pingpong"</li>
+      </ul>
+      <div id="blanks">
+        <form>
+          <div class="form-group">
+            <label for="number">Enter your number here:</label>
+            <input id="number" class="form-control" type="text">
+          </div>
+          <button type="submit" class="btn">Ping Pong!</button>
+        </form>
+      </div>
+      <div id="result">
+        <p>Result is <span class="result"></span> </p>
+      </div>
+    </div>
+  </body>
+</html>
