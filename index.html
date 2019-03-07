@@ -9,25 +9,28 @@
     <title>Ping Pong</title>
   </head>
   <body>
-    <div class="container">
-      <h1>Let's Play!</h1>
-      <h3>RUles:</h3>
-      <ul>
-        <li>Numbers Divisible by 3 become "ping"</li>
-        <li>Numbers Divisible by 5 become "pong"</li>
-        <li>Numbers Divisible by 15 become "pingpong"</li>
-      </ul>
-      <div id="blanks">
-        <form>
-          <div class="form-group">
-            <label for="number">Enter your number here:</label>
-            <input id="number" class="form-control" type="text">
-          </div>
-          <button type="submit" class="btn">Ping Pong!</button>
-        </form>
-      </div>
-      <div id="result">
-        <p>Result is <span class="result"></span> </p>
+    <div class="container card">
+      <div class="jumbotron">
+        <h1>Let's Play Ping Pong!</h1>
+        <h3>Rules:</h3>
+        <ul>
+          <li>Numbers Divisible by 3 become "ping"</li>
+          <li>Numbers Divisible by 5 become "pong"</li>
+          <li>Numbers Divisible by 15 become "pingpong"</li>
+        </ul>
+        <div id="blanks">
+          <form>
+            <div class="form-group">
+              <label for="number">Enter your number here:</label>
+              <input id="number" class="form-control" type="text">
+            </div>
+            <button type="submit" class="btn btn-info">Ping Pong!</button>
+          </form>
+        </div>
+        <div>
+          <ul class="unstyled" id="result">
+          </ul>
+        </div>
       </div>
     </div>
   </body>
