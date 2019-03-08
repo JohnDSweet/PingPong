@@ -1,4 +1,6 @@
 var pingpong = function(num) {
+  $("#start").text("Here we go:");
+  $("#start").fadeIn(1000);
 
   for (index = 1; index <= num; index++) {
     if (index % 15 === 0){
@@ -10,19 +12,19 @@ var pingpong = function(num) {
     } else {
       result = index;
     }
-    $("ul#result").append("<li>" + result + "</li>");
+    $("ul#result").append("<li id=\"" + index + "\">" + result + "</li>");
   };
 };
 
 $(document).ready(function() {
   $("#blanks form").submit(function(event) {
 
-    $('#result').empty(); 
+    $('#result').empty();
 
     var num = parseInt($("input#number").val());
     pingpong(num);
 
-    $("#result").show();
+    $("#result").fadeIn(1000);
 
     event.preventDefault();
   });
